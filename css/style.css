@@ -4,8 +4,20 @@
 body {
     color: #666666;
     background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Garet-Book';
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('/fonts/Garet-Book.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garet-Heavy';
+    src: url('/fonts/Garet-Heavy.ttf') format('truetype');
+    font-display: swap;
 }
 
 h1,
@@ -15,6 +27,16 @@ h4,
 h5, 
 h6 {
     font-weight: 100;
+}
+
+h2::selection{
+    background-color: #CC0000;
+    color: #fff;
+}
+
+span::selection{
+    background-color: #000;
+    color: #fff;
 }
 
 a {
@@ -37,7 +59,7 @@ a:focus {
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: 1366px;
+    max-width: 1466px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -81,7 +103,7 @@ a:focus {
 
 .header.home {
     margin-bottom: 45px;
-    background: linear-gradient(#c7c7c7, #ff0015), url(../img/header.jpg);
+    background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +117,7 @@ a:focus {
 
 .header .header-top {
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header .brand {
@@ -133,7 +155,7 @@ a:focus {
 
 .header .topbar-col a i {
     margin-right: 10px;
-    color: #E63946;
+    color: #CC0000;
 }
 
 .header .topbar-social {
@@ -155,7 +177,7 @@ a:focus {
 }
 
 .header .topbar-social a:hover i {
-    color: #E63946;
+    color: #CC0000;
 }
 
 .header .dropdown-menu {
@@ -183,13 +205,14 @@ a:focus {
         position: relative;
         padding: 8px 10px;
         color: #000;
+        font-weight: 600;
         font-size: 16px;
         z-index: 1;
     }
     
     .header .navbar-light a.nav-link:hover,
     .header .navbar-light a.nav-link.active {
-        color: #E63946;
+        color: #CC0000;
     }
 }
 
@@ -267,19 +290,22 @@ a:focus {
 
 .header .hero h2 {
     margin: 0;
-    font-size: 60px;
+    font-size: 55px;
+    font-family: 'Garet-Heavy';
     font-weight: 100;
-    color: #ffffff;
+    color: #000;
+    /* font-weight: 800; */
 }
 
 .header .hero h2 span {
-    color: #FFD662;
+    color: #CC0000;
 }
 
 .header .hero p {
     margin: 10px 0 20px 0;
     font-size: 22px;
-    color: #ffffff;
+    color: #000;
+    font-weight: 500;
 }
 
 .header .hero a.btn {
@@ -287,28 +313,28 @@ a:focus {
     padding: 15px 30px;
     font-size: 16px;
     text-transform: uppercase;
-    color: #00539C;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background: #ffffff;
+    background: #CC0000;
     transition: .3s;
 }
 
 .header .hero a.btn:hover {
-    color: #000000;
-    background: #FFD662;
+    color: #fff;
+    background: #000;
 }
 
 .header .hero .form {
     padding: 30px;
-    border: 1px solid rgba(255, 255, 255, .4);
-    background: rgba(255, 255, 255, .3);
+    /* border: 1px solid rgb(0, 0, 0); */
+    background: rgba(217, 217, 217, 0.3);
     border-radius: 5px;
 }
 
 .header .hero .form h3 {
-    color: #ffffff;
-    font-weight: 300;
+    color: #CC0000;
+    font-weight: 600;
 }
 
 .header .hero .form input,
@@ -317,8 +343,8 @@ a:focus {
     margin-bottom: 15px;
     height: 45px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, .3);
-    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(238, 50, 50, 0.3);
+    background: rgba(137, 133, 133, 0.2);
 }
 
 .header .hero .form textarea {
@@ -328,7 +354,7 @@ a:focus {
 .header .hero .form select,
 .header .hero .form input::placeholder,
 .header .hero .form textarea::placeholder {
-    color: #ffffff;
+    color: #000;
 }
 
 .header .hero .form select option:not(:checked) {
@@ -340,15 +366,15 @@ a:focus {
     padding: 10px 35px;
     font-size: 16px;
     text-transform: uppercase;
-    color: #000000;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background: #FFD662;
+    background: #CC0000;
     transition: .3s;
 }
 
 .header .hero .form .btn:hover {
-    color: #00539C;
+    color: #000;
     background: #ffffff;
 }
 
