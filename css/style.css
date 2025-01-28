@@ -104,9 +104,6 @@ a:focus {
 .header.home {
     margin-bottom: 45px;
     background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media (min-width: 992px) {
@@ -468,14 +465,11 @@ a:focus {
     display: none;
 }
 
-
-/*******************************/
-/******* Section Header ********/
-/*******************************/
+/* Section Header */
 .section-header {
     position: relative;
     width: 100%;
-    max-width: 550px;
+    max-width: 750px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -489,7 +483,7 @@ a:focus {
     height: 3px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: linear-gradient(to left, #FFD662, #00539C, #FFD662);
+    background: linear-gradient(to left, #CC0000, #000, #CC0000);
     border-radius: 100%;
 }
 
@@ -500,7 +494,7 @@ a:focus {
     height: 9px;
     left: calc(50% - 10px);
     bottom: -3px;
-    background: #00539C;
+    background: #CC0000;
     border-radius: 5px;
 }
 
@@ -510,79 +504,29 @@ a:focus {
 }
 
 .section-header h2 {
-    color: #00539C;
+    color: #000;
     font-size: 50px;
-    font-weight: 100;
+    font-family: 'Garet-Heavy';
 }
 
-.section-header.left {
-    text-align: left;
-}
-
-.section-header.left::before {
-    width: 60px;
-    left: 0;
-    background: linear-gradient(to left, #FFD662, #00539C, #00539C);
-    border-radius: 0 100% 100% 0;
-}
-
-.section-header.left::after {
-    left: 0;
-    border-radius: 5px;
+.section-header span {
+    color: #CC0000;
 }
 
 
-/*******************************/
-/********** About CSS **********/
-/*******************************/
-.about {
-    position: relative;
-    width: 100%;
-    padding: 45px 0;
+/*** About Start ***/
+
+.section-title p {
+    color: #000;
+    font-weight: 500;
 }
 
-.about .about-img img {
-    width: 100%;
-    border-radius: 5px;
+.section-title div div p {
+    color: #000 !important;
+    font-weight: 600;
 }
 
-.about .about-text h2 {
-    position: relative;
-    color: #00539C;
-    font-size: 50px;
-    margin-bottom: 15px;
-}
-
-.about .about-text h2 span {
-    font-size: 120px;
-}
-
-.about .about-text p {
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.about .about-text a.btn {
-    padding: 15px 35px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    background: #FFD662;
-    transition: .3s;
-}
-
-.about .about-text a.btn:hover {
-    color: #ffffff;
-    background: #00539C;
-}
-
-@media (max-width: 767.98px) {
-    .about .about-img img {
-        margin-bottom: 30px;
-    }
-}
+/*** About End ***/
 
 
 /*******************************/
