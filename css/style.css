@@ -5,7 +5,6 @@ body {
     color: #666666;
     background: #ffffff;
     font-family: 'Garet-Book';
-    font-weight: 400;
 }
 
 @font-face {
@@ -20,21 +19,12 @@ body {
     font-display: swap;
 }
 
-h1,
-h2, 
-h3, 
-h4,
-h5, 
-h6 {
-    font-weight: 100;
-}
-
-h2::selection{
+h2::selection {
     background-color: #CC0000;
     color: #fff;
 }
 
-span::selection{
+span::selection {
     background-color: #000;
     color: #fff;
 }
@@ -67,8 +57,8 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #FFD662;
-    color: #000000;
+    background: #CC0000;
+    color: #fff;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -82,8 +72,8 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #ffffff;
-    background: #00539C;
+    color: #fff;
+    background: #000;
 }
 
 .back-to-top i {
@@ -195,13 +185,13 @@ a:focus {
     .header .navbar {
         background: transparent !important;
     }
-    
+
     .header .navbar-brand {
         display: none;
     }
-    
+
     .header .navbar-light a.nav-link,
-    .header .navbar-light .show > .nav-link {
+    .header .navbar-light .show>.nav-link {
         position: relative;
         padding: 8px 10px;
         color: #000;
@@ -209,7 +199,7 @@ a:focus {
         font-size: 16px;
         z-index: 1;
     }
-    
+
     .header .navbar-light a.nav-link:hover,
     .header .navbar-light a.nav-link.active {
         color: #CC0000;
@@ -221,30 +211,30 @@ a:focus {
         text-align: center;
         margin-bottom: 15px;
     }
-    
+
     .header .topbar {
         text-align: center;
         margin-bottom: 15px;
     }
-    
+
     .header .topbar .topbar-col {
         margin: 0;
     }
-    
+
     .header .topbar .topbar-social {
         margin-top: 5px;
     }
-    
+
     .header .navbar {
         background: #ffffff !important;
         border: none;
         z-index: 1;
     }
-    
+
     .header a.nav-link {
         padding: 5px 0;
     }
-    
+
     .header .dropdown-menu {
         box-shadow: none;
     }
@@ -277,7 +267,7 @@ a:focus {
     .header .navbar {
         border-radius: 5px;
     }
-    
+
     .header .navbar .btn {
         display: none;
     }
@@ -378,10 +368,43 @@ a:focus {
     background: #ffffff;
 }
 
-@media (max-width: 767.98px) {
-    .header .hero .form {
-        margin-top: 45px;
+@media (max-width: 993px) {
+
+    .header .hero {
+        padding-right: 60px;
+        padding-left: 60px;
     }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .hero div:last-child {
+        margin-top: 80px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .header .hero {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header .hero h2 {
+        font-size: 45px;
+    }
+
+    .header .hero p {
+        font-size: 16px;
+
+    .hero div:last-child {
+        margin-top: 60px;
+    }
+
 }
 
 
@@ -981,7 +1004,7 @@ a:focus {
     letter-spacing: 2px;
     background: #FFD662;
     border-radius: 5px;
-    transition:  .3s;
+    transition: .3s;
 }
 
 .price .price-action a i {
@@ -1045,7 +1068,7 @@ a:focus {
     height: 50px;
     padding: 10px 20px;
     font-size: 16px;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
     color: #000000;
     background: #FFD662;
@@ -1244,7 +1267,7 @@ a:focus {
     height: 60px;
     padding: 16px 35px 14px 35px;
     font-size: 18px;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
     color: #000000;
     background: #FFD662;
@@ -1471,7 +1494,7 @@ a:focus {
     .story .story-continue::before {
         left: 48.5px;
     }
-    
+
     .story .story-end,
     .story .story-start,
     .story .story-year,
@@ -1482,26 +1505,26 @@ a:focus {
     .story .story-launch {
         text-align: left;
     }
-    
+
     .story .story-date {
         padding: 0;
     }
-    
+
     .story .row.story-left .story-date::after,
     .story .row.story-right .story-date::after {
         left: 54.5px;
     }
-    
+
     .story .story-box,
     .story .row.story-right .story-date,
     .story .row.story-left .story-date {
         margin-left: 77px;
     }
-    
+
     .story .story-launch .story-box {
         margin-left: 0;
     }
-    
+
     .story .row.story-left .story-box::after {
         left: -20px;
         border-color: transparent #ffffff transparent transparent;
@@ -1511,7 +1534,7 @@ a:focus {
         left: -22px;
         border-color: transparent #dddddd transparent transparent;
     }
-    
+
     .story .story-launch .story-box::after,
     .story .story-launch .story-box::before {
         left: 30px;
@@ -1584,12 +1607,12 @@ a:focus {
     overflow: hidden;
     height: 400px;
     position: relative;
-    margin: 0; 
+    margin: 0;
 }
 
 .portfolio .portfolio-item figure img {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -1768,7 +1791,7 @@ a:focus {
 
 .footer .footer-contact h2,
 .footer .footer-link h2,
-.footer .footer-form h2{
+.footer .footer-form h2 {
     position: relative;
     margin-bottom: 30px;
     font-size: 20px;
@@ -1814,7 +1837,7 @@ a:focus {
     margin-bottom: 10px;
     font-size: 14px;
     color: #ffffff;
-    
+
 }
 
 .footer .footer-link a::before {
@@ -1841,7 +1864,7 @@ a:focus {
     right: 5px;
     bottom: 5px;
     font-size: 14px;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
     color: #000000;
     background: #FFD662;
@@ -1908,6 +1931,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
