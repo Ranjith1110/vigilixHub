@@ -5,6 +5,7 @@ body {
     color: #666666;
     background: #ffffff;
     font-family: 'Garet-Book';
+    font-weight: 400;
 }
 
 @font-face {
@@ -17,6 +18,15 @@ body {
     font-family: 'Garet-Heavy';
     src: url('/fonts/Garet-Heavy.ttf') format('truetype');
     font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
 }
 
 h2::selection {
@@ -72,7 +82,7 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #fff;
+    color: #ffffff;
     background: #000;
 }
 
@@ -399,7 +409,11 @@ a:focus {
     }
 
     .header .hero p {
-        font-size: 16px;
+        margin: 10px 0 20px 0;
+        font-size: 22px;
+        color: #000;
+        font-weight: 500;
+    }
 
     .hero div:last-child {
         margin-top: 60px;
