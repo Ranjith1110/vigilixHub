@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CleanMe - Cleaning Company Website Template</title>
+    <title>VigilixHub</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Cleaning Company Website Template" name="keywords">
     <meta content="Cleaning Company Website Template" name="description">
@@ -11,10 +11,8 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
-
     <!-- CSS Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -23,65 +21,12 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        .image-container {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            /* Centers image horizontally */
-            align-items: center;
-            /* Centers image vertically */
-        }
-
-        .image-container div h5 {
-            color: #000;
-            font-weight: 700;
-            margin-top: 10px;
-        }
-
-        .image-container img {
-            display: block;
-            width: 150px;
-            height: auto;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .image-container .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 1);
-            border-radius: 12px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .image-container:hover .overlay {
-            opacity: 1;
-        }
-
-        .image-container:hover img {
-            transform: scale(1.1);
-            /* Slight zoom effect on hover */
-        }
-    </style>
-
 </head>
 
 <body>
 
     <div class="wrapper">
+
         <!-- Header Start -->
         <div class="header home">
             <div class="container-fluid">
@@ -96,18 +41,16 @@
                     <div class="col-lg-9">
                         <div class="topbar">
                             <div class="topbar-col">
-                                <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+012 345 67890</a>
+                                <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+91 7868043538</a>
                             </div>
                             <div class="topbar-col">
-                                <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>info@example.com</a>
+                                <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>support@vigilixhub.in</a>
                             </div>
                             <div class="topbar-col">
                                 <div class="topbar-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61572596315865"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/vigilixhub/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -121,9 +64,9 @@
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav ml-auto">
                                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About</a>
-                                    <a href="service.html" class="nav-item nav-link">Service</a>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                    <a href="#about" class="nav-item nav-link">About</a>
+                                    <a href="#service" class="nav-item nav-link">Service</a>
+                                    <a href="#contact" class="nav-item nav-link">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -131,15 +74,15 @@
                 </div>
 
                 <div class="hero row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" data-aos="fade-right" data-aos-duration="700">
                         <h2 style="color: #000;">Welcome to <span style="color: red;">Vigilix</span>Hub</h2>
                         <h2 style="color: red;"><span style="color: #000;">Your Trusted
                             </span>Server Monitoring <span style="color: #000;">Partner</span></h2>
                         <p style="color: #000;">Stay Ahead with Proactive Server Monitoring</p>
                         <a class="btn" href="">Get Started Now</a>
                     </div>
-                    <div class="col-lg-5">
-                        <img width="100%" src="/img/demo.svg" alt="">
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1000">
+                        <img width="100%" src="img/banner/demo.svg" alt="">
                         <!-- <div class="form">
                                 <h3>Get A Quote</h3>
                                 <form>
@@ -165,25 +108,26 @@
 
 
         <!-- About Start -->
-        <div class="about faqs py-5">
+        <div id="about" class="about faqs py-5">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
                     <h2 style="color: #000;">Why Choose <span style="color: red;">Vigilix</span>Hub?</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="about-img">
-                            <img src="img/demo.svg" alt="Image">
+                        <div class="about-img" data-aos="fade-up" data-aos-duration="1150">
+                            <img src="img/about/why-vigilix.png" alt="Image">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div id="accordion">
-                            <p class="text-justify">At VigilixHub, we understand that the health of your IT
+                            <p class="text-justify" data-aos="fade-up" data-aos-duration="1250">At VigilixHub, we
+                                understand that the health of your IT
                                 infrastructure is critical to your success. That’s why we provide robust, real-time
                                 server monitoring solutions designed to ensure your systems operate smoothly and
                                 efficiently. Our cutting-edge tools keep you informed and in control, so you can focus
                                 on growing your business.</p>
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1350">
                                 <div class="card-header">
                                     <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne"
                                         aria-expanded="true">
@@ -197,7 +141,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1450">
                                 <div class="card-header">
                                     <a class="card-link" data-toggle="collapse" href="#collapseTwo">
                                         <span>2</span> Expert Support
@@ -210,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1550">
                                 <div class="card-header">
                                     <a class="card-link" data-toggle="collapse" href="#collapseThree">
                                         <span>3</span> Affordable Pricing
@@ -232,112 +176,310 @@
 
 
         <!-- Service Start -->
-        <div class="testimonial py-5">
+        <div id="service" class="seemless py-5">
             <div class="container">
-                <div class="section-header">
-                    <h2 style="color: #000;">Our Services</h2>
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 style="color: #000;">Our <span style="color: red;">Services</span></h2>
                 </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/header.svg" alt="">
+                <div class="seemless-content">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/web-dev.png" alt="Feature">
+                                    <h5>Website Developing</h5>
+                                </div>
+                                <div class="overlay">We can be packaged and customized based on client needs, providing a comprehensive solution for businesses looking to establish or improve their online presence.</div>
+                            </div>
                         </div>
-                        <div class="testimonial-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/ui-ux.png" alt="Feature">
+                                    <h5>UI and UX</h5>
+                                    <div class="overlay">Designs intuitive and visually appealing interfaces to enhance user experience and engagement while optimizing usability through seamless navigation and responsive design.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/header.svg" alt="">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/markt.png" alt="Feature">
+                                    <h5>Marketing</h5>
+                                    <div class="overlay">Develops strategic campaigns to boost brand awareness and engage customers while strengthening retention through personalized marketing automation.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="testimonial-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/infrastru-monitor.png" alt="Feature">
+                                    <h5>Infrastructure Monitoring</h5>
+                                    <div class="overlay">Monitors servers, network devices, and storage systems to ensure your web hosting infrastructure runs smoothly.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/header.svg" alt="">
+                        <div class="col-lg-3 py-3" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/Perfor-monitor.png" alt="Feature">
+                                    <h5>Performance Monitoring</h5>
+                                    <div class="overlay">Tracks real-time performance metrics and historical trends to ensure your website’s speed and responsiveness are optimized.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="testimonial-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
+                        <div class="col-lg-3 py-3" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/app-monitor.png" alt="Feature">
+                                    <h5>Application Monitoring</h5>
+                                    <div class="overlay">Monitors applications like databases, web servers (Apache, Nginx), and CMS platforms (WordPress, Drupal) to maintain high availability and performance.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/header.svg" alt="">
+                        <div class="col-lg-3 py-3" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/network-monit.png" alt="Feature">
+                                    <h5>Network Monitoring</h5>
+                                    <div class="overlay">Monitors network devices and protocols (such as DNS, HTTP, HTTPS) to ensure your website is always accessible to users, detecting and resolving network bottlenecks.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="testimonial-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                            </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
+                        <div class="col-lg-3 py-3" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/log-management.png" alt="Feature">
+                                    <h5>Log Management</h5>
+                                    <div class="overlay">Collects, stores, and analyzes logs (server logs, web application logs) for troubleshooting and auditing, helping developers identify errors or security vulnerabilities in website code.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1600">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/cloud-monit.png" alt="Feature">
+                                    <h5>Cloud Monitoring</h5>
+                                    <div class="overlay">Monitors cloud-based hosting environments (AWS, Azure, Google Cloud) where your website is hosted, providing insights into resource usage and potential issues affecting web application uptime.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1600">
+                            <div class="image-container">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="img/services/dashboard-report.png" alt="Feature">
+                                    <h5>Dashboards and Reporting</h5>
+                                    <div class="overlay">Customizable dashboards provide detailed system health, performance insights, and web traffic data to improve the management and optimization of websites.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- <div id="service" class="testimonial py-5">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 style="color: #000;">Our <span style="color: red;">Services</span></h2>
+                </div>
+                <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/webDevelopment.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Website Developing</h3>
+                            <p class="text-justify mt-3">
+                                We can be packaged and customized based on client needs, providing a comprehensive
+                                solution for businesses looking to establish or improve their online presence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/UI&UX.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>UI and UX</h3>
+                            <p class="text-justify mt-3">
+                                Designs intuitive and visually appealing interfaces to enhance user experience and
+                                engagement while optimizing usability through seamless navigation and responsive design.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/MARKETIN.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Marketing</h3>
+                            <p class="text-justify mt-3">
+                                Develops strategic campaigns to boost brand awareness and engage customers while
+                                strengthening retention through personalized marketing automation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/ISM.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Infrastructure Monitoring</h3>
+                            <p class="text-justify mt-3">
+                                Monitors servers, network devices, and storage systems to ensure your web hosting
+                                infrastructure runs smoothly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/Application Monitoring.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Application Monitoring</h3>
+                            <p class="text-justify mt-3">
+                                Monitors applications like databases, web servers (Apache, Nginx), and CMS platforms
+                                (WordPress, Drupal) to maintain high availability and performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/Network Monitoring.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Network Monitoring</h3>
+                            <p class="text-justify mt-3">
+                                Monitors network devices and protocols (such as DNS, HTTP, HTTPS) to ensure your website
+                                is always accessible to users, detecting and resolving network bottlenecks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/Performance Monitoring.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Alerting and Notification</h3>
+                            <p class="text-justify mt-3">
+                                Customizable alerts to notify developers, admins, or stakeholders via email, SMS, or
+                                third-party tools (e.g., Slack, PagerDuty) whenever issues arise, helping teams respond
+                                quickly to website issues.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/web application logs.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Log Management</h3>
+                            <p class="text-justify mt-3">
+                                Collects, stores, and analyzes logs (server logs, web application logs) for
+                                troubleshooting and auditing, helping developers identify errors or security
+                                vulnerabilities in website code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/Cloud Monitoring.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Cloud Monitoring</h3>
+                            <p class="text-justify mt-3">
+                                Monitors cloud-based hosting environments (AWS, Azure, Google Cloud) where your website
+                                is hosted, providing insights into resource usage and potential issues affecting web
+                                application uptime.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/services/Dashboards and Reporting.png" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3>Dashboards and Reporting</h3>
+                            <p class="text-justify mt-3">
+                                Customizable dashboards provide detailed system health, performance insights, and web
+                                traffic data to improve the management and optimization of websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <!-- Service End -->
 
 
         <!-- Feature Start -->
+        <!-- Comprehensive Server Monitoring Start -->
         <div class="feature py-5">
             <div class="container">
-                <div class="section-header">
-                    <h2 style="color: #000;">Comprehensive Server Monitoring</h2>
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 style="color: #000;">Comprehensive Server<span style="color: red;"> Monitoring</span></h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <p class="text-justify">
-                            In today’s digital landscape, server performance is the backbone of business continuity. VigilixHub offers comprehensive server monitoring to ensure your systems run smoothly, securely, and efficiently without unexpected interruptions.
+                        <p class="text-justify" data-aos="fade-right" data-aos-duration="1100">
+                            In today’s digital landscape, server performance is the backbone of business continuity.
+                            VigilixHub offers comprehensive server monitoring to ensure your systems run smoothly,
+                            securely, and efficiently without unexpected interruptions.
                         </p>
-                        <div class="text-center">
-                            <img width="75%" src="/img/CSM.png" alt="">
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="1200">
+                            <img width="75%" src="img/csmImg/cms.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="row align-items-center feature-item">
-                            <div class="col-4">
-                                <img src="img/Real Time.png" alt="Feature">
+                            <div class="col-4" data-aos="fade-up" data-aos-duration="1100">
+                                <img src="img/csmImg/real-time.png" alt="Feature">
                             </div>
-                            <div class="col-7">
-                                <h3>Multi-channel Notifications</h3>
+                            <div class="col-7" data-aos="fade-left" data-aos-duration="1100">
+                                <h3>Real-time Metrics</h3>
                                 <p>
-                                    Receive alerts via email, SMS, or your favorite collaboration tools.
+                                    Gain visibility into CPU, memory, disk usage, and network performance.
                                 </p>
                             </div>
                         </div>
                         <div class="row align-items-center feature-item">
-                            <div class="col-4">
-                                <img src="img/Analysis.png" alt="Feature">
+                            <div class="col-4" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="img/csmImg/analysis.png" alt="Feature">
                             </div>
-                            <div class="col-8">
-                                <h3>Root Cause Analysis</h3>
+                            <div class="col-8" data-aos="fade-left" data-aos-duration="1200">
+                                <h3>Custom Dashboards</h3>
                                 <p>
-                                    Quickly identify and resolve the underlying cause of issues.
+                                    Monitor what matters most with fully customizable views.
                                 </p>
                             </div>
                         </div>
                         <div class="row align-items-center feature-item">
-                            <div class="col-4">
-                                <img src="img/Dashboard.png" alt="Feature">
+                            <div class="col-4" data-aos="fade-up" data-aos-duration="1300">
+                                <img src="img/csmImg/dashboard.png" alt="Feature">
                             </div>
-                            <div class="col-7">
-                                <h3>Threshold-based Alerts</h3>
+                            <div class="col-7" data-aos="fade-left" data-aos-duration="1300">
+                                <h3>Historical Data Analysis</h3>
                                 <p>
-                                    Customize thresholds for critical metrics to suit your unique needs.
+                                    Make informed decisions with detailed performance trends and reports.
                                 </p>
                             </div>
                         </div>
@@ -345,43 +487,49 @@
                 </div>
             </div>
         </div>
-        <!-- Feature End -->
+        <!-- Comprehensive Server Monitoring End -->
 
 
+        <!-- Automated Alerts Start -->
         <div class="seemless py-5">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
                     <h2 style="color: #000;">Automated <span style="color: red;">Alerts</span></h2>
                 </div>
                 <div class="seemless-content">
                     <div class="text-center">
-                        <p>At VigilixHub, we understand how crucial server uptime is for your business operations. Even a few minutes of downtime can lead to disruptions, lost revenue, and frustrated customers. To help you stay ahead of any issues, we are introducing automated alerts that notify you instantly when your server goes down.</p>
+                        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="300"
+                            data-aos-offset="0">At VigilixHub, we understand how crucial server uptime is for your
+                            business operations. Even
+                            a few minutes of downtime can lead to disruptions, lost revenue, and frustrated customers.
+                            To help you stay ahead of any issues, we are introducing automated alerts that notify you
+                            instantly when your server goes down.</p>
                     </div>
                     <div class="row align-items-center py-5">
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                             <div class="image-container">
                                 <div class="d-flex flex-column align-items-center">
-                                    <img src="img/E-Mail.png" alt="Feature">
+                                    <img src="img/automated-alerts/e-mail.png" alt="Feature">
                                     <h5>E-Mail</h5>
                                 </div>
                                 <div class="overlay">Email is the most popular way for any notification. Get
                                     alerted!</div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
                             <div class="image-container">
                                 <div class="d-flex flex-column align-items-center">
-                                    <img src="img/SMS.png" alt="Feature">
+                                    <img src="img/automated-alerts/sms.png" alt="Feature">
                                     <h5>SMS</h5>
                                     <div class="overlay">Get alerted instantly by SMS, useful when you are offline!
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
                             <div class="image-container">
                                 <div class="d-flex flex-column align-items-center">
-                                    <img src="img/Phone Call.png" alt="Feature">
+                                    <img src="img/automated-alerts/phone-call.png" alt="Feature">
                                     <h5>Phone Call</h5>
                                     <div class="overlay">Get an automated voice call from us whenever your website is
                                         down.
@@ -393,81 +541,72 @@
                 </div>
             </div>
         </div>
+        <!-- Automated Alerts End -->
 
-
+        
+        <!-- Seemless Intergation Start -->
         <div class="seemless py-5">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
                     <h2 style="color: #000;">Seemless <span style="color: red;">Intergation</span></h2>
                 </div>
                 <div class="seemless-content">
                     <div class="text-center">
-                        <p>VigilixHub integrates with your existing IT ecosystem for streamlined operations. Whether you
+                        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="300"
+                        data-aos-offset="0">VigilixHub integrates with your existing IT ecosystem for streamlined operations. Whether you
                             use cloud services, virtual machines, or on-premises servers, we’ve got you covered.</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 ">
-                            <img width="200px" class="rounded border p-2" src="/img/Mac OS.png" alt="">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img width="200px" class="rounded border p-2" src="img/seemless-intergation/mac-os.png" alt="">
                         </div>
-                        <div class="col-lg-3">
-                            <img width="200px" class="rounded border p-2" src="/img/Windows.png" alt="">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
+                            <img width="200px" class="rounded border p-2" src="img/seemless-intergation/windows.png" alt="">
                         </div>
-                        <div class="col-lg-3">
-                            <img width="200px" class="rounded border p-2" src="/img/Linux.png" alt="">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+                            <img width="200px" class="rounded border p-2" src="img/seemless-intergation/linux.png" alt="">
                         </div>
-                        <div class="col-lg-3">
-                            <img width="200px" class="rounded border p-2" src="/img/Ubuntu.png" alt="">
+                        <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2500">
+                            <img width="200px" class="rounded border p-2" src="img/seemless-intergation/ubuntu.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Seemless Intergation End -->
+        <!-- Feature End -->
 
 
         <!-- Footer Start -->
-        <div class="footer">
+        <div id="contact" class="footer" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="300"
+        data-aos-offset="0">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-contact">
                             <h2>Get In Touch</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                            <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                            <p><i class="fa fa-envelope"></i>info@example.com</p>
+                            <p><i class="fa fa-phone-alt"></i>+91 7868043538</p>
+                            <p><i class="fa fa-envelope"></i>support@vigilixhub.in</p>
                             <div class="footer-social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-youtube"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61572596315865"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/vigilixhub/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-link">
                             <h2>Useful Link</h2>
-                            <a href="">About Us</a>
-                            <a href="">Our Story</a>
-                            <a href="">Our Services</a>
-                            <a href="">Our Projects</a>
+                            <a href="#about">About Us</a>
+                            <a href="#service">Our Services</a>
                             <a href="">Contact Us</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>Useful Link</h2>
-                            <a href="">Our Clients</a>
-                            <a href="">Clients Review</a>
-                            <a href="">Ongoing Project</a>
-                            <a href="">Customer Support</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-form">
                             <h2>Stay Updated</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, adipiscing elit. Etiam accumsan lacus eget velit
+                                I look forward to visiting again. Please feel free to drop by anytime.
                             </p>
                             <input class="form-control" placeholder="Email here">
                             <button class="btn">Submit</button>
@@ -479,15 +618,14 @@
                 <div class="f-menu">
                     <a href="">Terms of use</a>
                     <a href="">Privacy policy</a>
-                    <a href="">Cookies</a>
                     <a href="">Help & FQAs</a>
-                    <a href="">Contact us</a>
                 </div>
             </div>
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; <a href="https://htmlcodex.com"><span style="color: #fff;">Vigilix</span>Hub, </a>All Right Reserved.</p>
+                        <p>&copy; <a href="https://htmlcodex.com"><span style="color: #fff;">Vigilix</span>Hub, </a>All
+                            Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="https://rancotechnology.com/">RanCo Tech</a></p>
@@ -501,12 +639,17 @@
     </div>
 
     <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
