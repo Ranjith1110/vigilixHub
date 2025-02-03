@@ -45,12 +45,15 @@
                                 <a href="tel:+012 345 67890"><i class="fa fa-phone-alt"></i>+91 7868043538</a>
                             </div>
                             <div class="topbar-col">
-                                <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>support@vigilixhub.in</a>
+                                <a href="mailto:info@example.com"><i
+                                        class="fa fa-envelope"></i>support@vigilixhub.in</a>
                             </div>
                             <div class="topbar-col">
                                 <div class="topbar-social">
-                                    <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.facebook.com/profile.php?id=61572596315865"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61572596315865"><i
+                                            class="fab fa-facebook"></i></a>
                                     <a href="https://www.instagram.com/vigilixhub/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
@@ -80,7 +83,8 @@
                         <h2 style="color: red;"><span style="color: #000;">Your Trusted
                             </span>Server Monitoring <span style="color: #000;">Partner</span></h2>
                         <p style="color: #000;">Stay Ahead with Proactive Server Monitoring</p>
-                        <a class="btn" href="">Get Started Now</a>
+                        <button class="btn custom-btn-primary" data-toggle="modal" data-target="#customPopupForm">Get
+                            Start Now</button>
                     </div>
                     <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-up" data-aos-duration="1000">
                         <img width="100%" src="img/banner/demo.svg" alt="">
@@ -106,6 +110,55 @@
             </div>
         </div>
         <!-- Header End -->
+
+        <!-- Popup Modal -->
+        <div class="modal fade" id="customPopupForm" tabindex="-1" role="dialog" aria-labelledby="customPopupFormLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content custom-modal-content">
+                    <div class="modal-header custom-modal-header">
+                        <h5 class="modal-title" id="customPopupFormLabel">Contact Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" method="POST" action="send_email.php">
+                            <div class="form-group">
+                                <label for="customName">Name</label>
+                                <input type="text" class="form-control" id="customName" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customCompany">Company Name</label>
+                                <input type="text" class="form-control" id="customCompany" name="company"
+                                    placeholder="Enter company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customEmail">Email</label>
+                                <input type="email" class="form-control" id="customEmail" name="email"
+                                    placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customPhone">Phone Number</label>
+                                <input type="tel" class="form-control" id="customPhone" name="phone"
+                                    placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customMessage">Message</label>
+                                <textarea class="form-control" id="customMessage" rows="5" name="message"
+                                    placeholder="Enter your message" required></textarea>
+                            </div>
+                            <div class="modal-footer custom-modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn custom-btn-primary">Submit</button> <!-- Corrected -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- About Start -->
@@ -190,7 +243,9 @@
                                     <img src="img/services/web-dev.png" alt="Feature">
                                     <h5>Website Developing</h5>
                                 </div>
-                                <div class="overlay">We can be packaged and customized based on client needs, providing a comprehensive solution for businesses looking to establish or improve their online presence.</div>
+                                <div class="overlay">We can be packaged and customized based on client needs, providing
+                                    a comprehensive solution for businesses looking to establish or improve their online
+                                    presence.</div>
                             </div>
                         </div>
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1200">
@@ -198,7 +253,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/ui-ux.png" alt="Feature">
                                     <h5>UI/UX</h5>
-                                    <div class="overlay">Designs intuitive and visually appealing interfaces to enhance user experience and engagement while optimizing usability through seamless navigation and responsive design.
+                                    <div class="overlay">Designs intuitive and visually appealing interfaces to enhance
+                                        user experience and engagement while optimizing usability through seamless
+                                        navigation and responsive design.
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +265,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/markt.png" alt="Feature">
                                     <h5>Marketing</h5>
-                                    <div class="overlay">Develops strategic campaigns to boost brand awareness and engage customers while strengthening retention through personalized marketing automation.
+                                    <div class="overlay">Develops strategic campaigns to boost brand awareness and
+                                        engage customers while strengthening retention through personalized
+                                        marketing automation.
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +277,8 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/infrastru-monitor.png" alt="Feature">
                                     <h5>Infrastructure Monitoring</h5>
-                                    <div class="overlay">Monitors servers, network devices, and storage systems to ensure your web hosting infrastructure runs smoothly.
+                                    <div class="overlay">Monitors servers, network devices, and storage systems to
+                                        ensure your web hosting infrastructure runs smoothly.
                                     </div>
                                 </div>
                             </div>
@@ -228,7 +288,8 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/Perfor-monitor.png" alt="Feature">
                                     <h5>Performance Monitoring</h5>
-                                    <div class="overlay">Tracks real-time performance metrics and historical trends to ensure your website’s speed and responsiveness are optimized.
+                                    <div class="overlay">Tracks real-time performance metrics and historical trends to
+                                        ensure your website’s speed and responsiveness are optimized.
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +299,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/app-monitor.png" alt="Feature">
                                     <h5>Application Monitoring</h5>
-                                    <div class="overlay">Monitors applications like databases, web servers (Apache, Nginx), and CMS platforms (WordPress, Drupal) to maintain high availability and performance.
+                                    <div class="overlay">Monitors applications like databases, web servers (Apache,
+                                        Nginx), and CMS platforms (WordPress, Drupal) to maintain high availability and
+                                        performance.
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +311,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/network-monit.png" alt="Feature">
                                     <h5>Network Monitoring</h5>
-                                    <div class="overlay">Monitors network devices and protocols (such as DNS, HTTP, HTTPS) to ensure your website is always accessible to users, detecting and resolving network bottlenecks.
+                                    <div class="overlay">Monitors network devices and protocols (such as DNS, HTTP,
+                                        HTTPS) to ensure your website is always accessible to users, detecting and
+                                        resolving network bottlenecks.
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +323,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/log-management.png" alt="Feature">
                                     <h5>Log Management</h5>
-                                    <div class="overlay">Collects, stores, and analyzes logs (server logs, web application logs) for troubleshooting and auditing, helping developers identify errors or security vulnerabilities in website code.
+                                    <div class="overlay">Collects, stores, and analyzes logs (server logs, web
+                                        application logs) for troubleshooting and auditing, helping developers identify
+                                        errors or security vulnerabilities in website code.
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +335,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/cloud-monit.png" alt="Feature">
                                     <h5>Cloud Monitoring</h5>
-                                    <div class="overlay">Monitors cloud-based hosting environments (AWS, Azure, Google Cloud) where your website is hosted, providing insights into resource usage and potential issues affecting web application uptime.
+                                    <div class="overlay">Monitors cloud-based hosting environments (AWS, Azure, Google
+                                        Cloud) where your website is hosted, providing insights into resource usage and
+                                        potential issues affecting web application uptime.
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +347,9 @@
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="img/services/dashboard-report.png" alt="Feature">
                                     <h5>Dashboards and Reporting</h5>
-                                    <div class="overlay">Customizable dashboards provide detailed system health, performance insights, and web traffic data to improve the management and optimization of websites.
+                                    <div class="overlay">Customizable dashboards provide detailed system health,
+                                        performance insights, and web traffic data to improve the management and
+                                        optimization of websites.
                                     </div>
                                 </div>
                             </div>
@@ -544,7 +615,7 @@
         </div>
         <!-- Automated Alerts End -->
 
-        
+
         <!-- Seemless Intergation Start -->
         <div class="seemless py-5">
             <div class="container">
@@ -554,21 +625,26 @@
                 <div class="seemless-content">
                     <div class="text-center">
                         <p data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="300"
-                        data-aos-offset="0">VigilixHub integrates with your existing IT ecosystem for streamlined operations. Whether you
+                            data-aos-offset="0">VigilixHub integrates with your existing IT ecosystem for streamlined
+                            operations. Whether you
                             use cloud services, virtual machines, or on-premises servers, we’ve got you covered.</p>
                     </div>
                     <div class="row g-3">
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/mac-os.png" alt="">
+                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/mac-os.png"
+                                alt="">
                         </div>
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="1500">
-                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/windows.png" alt="">
+                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/windows.png"
+                                alt="">
                         </div>
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2000">
-                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/linux.png" alt="">
+                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/linux.png"
+                                alt="">
                         </div>
                         <div class="col-lg-3" data-aos="fade-up" data-aos-duration="2500">
-                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/ubuntu.png" alt="">
+                            <img width="100%" class="rounded border p-2" src="img/seemless-intergation/ubuntu.png"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -580,7 +656,7 @@
 
         <!-- Footer Start -->
         <div id="contact" class="footer" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="300"
-        data-aos-offset="0">
+            data-aos-offset="0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4">
@@ -589,8 +665,10 @@
                             <p><i class="fa fa-phone-alt"></i>+91 7868043538</p>
                             <p><i class="fa fa-envelope"></i>support@vigilixhub.in</p>
                             <div class="footer-social">
-                                <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://www.facebook.com/profile.php?id=61572596315865"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/vigilixhub/?viewAsMember=true"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61572596315865"><i
+                                        class="fab fa-facebook"></i></a>
                                 <a href="https://www.instagram.com/vigilixhub/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
