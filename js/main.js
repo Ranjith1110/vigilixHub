@@ -58,3 +58,31 @@
     
 })(jQuery);
 
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value,
+        company: document.getElementById("company").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+    };
+
+    try {
+        let response = await fetch("http://localhost:5000/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        let result = await response.json();
+        alert(result.message);
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Failed to send email.");
+    }
+});
+
