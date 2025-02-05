@@ -58,8 +58,11 @@
     
 })(jQuery);
 
-document.getElementById("contactForm").addEventListener("submit", async function(event) {
-    event.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent page reload
+
+    // Show an instant alert to the user
+    alert("Submitting your request... Please wait...");
 
     const formData = {
         name: document.getElementById("name").value,
@@ -72,17 +75,36 @@ document.getElementById("contactForm").addEventListener("submit", async function
     try {
         let response = await fetch("http://localhost:5000/send-email", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
         });
 
         let result = await response.json();
-        alert(result.message);
+
+        if (response.ok) {
+            console.log("✅ Email sent successfully!", result);
+
+            // Show success alert after email is sent
+            alert("✅ Email sent successfully!");
+
+            // Close the form modal (if using Bootstrap)
+            $("#customPopupForm").modal("hide");
+
+            // Show success popup after 500ms delay
+            setTimeout(() => {
+                $("#successPopup").modal("show");
+            }, 500);
+
+            // Clear form fields
+            document.getElementById("contactForm").reset();
+        } else {
+            console.error("❌ Error:", result.error);
+            alert("❌ Failed to send email. Please try again.");
+        }
     } catch (error) {
-        console.error("Error:", error);
-        alert("Failed to send email.");
+        console.error("❌ Fetch Error:", error);
+        alert("❌ Failed to send email.");
     }
 });
+
 
