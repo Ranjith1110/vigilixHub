@@ -1096,3 +1096,27 @@ a:focus {
         text-align: center;
     }
 }
+
+.dep-banner div div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dep-banner div div h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.title{
+    color: red;
+    font-weight: 600;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-black span{
+    color: #666666;
+}
