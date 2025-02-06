@@ -28,11 +28,11 @@ app.post("/send-email", async (req, res) => {
     // Email options with company logo
     let mailOptions = {
         from: email,
-        to: "ranjithram878@gmail.com", // Replace with recipient's email
+        to: "sabari@vigilixhub.in", // Replace with recipient's email
         subject: "New Contact Form Submission",
         html: `
             <div style="text-align: center;">
-                <img src="https://drive.google.com/file/d/1wv6ntwZJ2ft290b6OxL43YDFtd2eWzX4/view?usp=sharing" alt="Company Logo" style="width: 150px; margin-bottom: 20px;">
+                <img src="https://imgur.com/a/CE2xeZ2" alt="Company Logo" style="width: 150px; margin-bottom: 20px;">
             </div>
             <h3>Contact Form Submission</h3>
             <p><strong>Name:</strong> ${name}</p>
