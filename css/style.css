@@ -1120,3 +1120,43 @@ a:focus {
 .text-black span{
     color: #666666;
 }
+
+.card-header {
+    background-color: #000; 
+    color: white;
+    cursor: pointer;
+}
+
+.card-header h5 button {
+    font-weight: 700;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #d1ecf1;
+}
+
+.btn-link::after {
+    content: "\25BC"; /* Unicode for down arrow */
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-link.collapsed::after {
+    transform: rotate(0deg);
+}
+
+.btn-link:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
