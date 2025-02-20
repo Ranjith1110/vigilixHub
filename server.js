@@ -32,7 +32,7 @@ app.post("/send-email", async (req, res) => {
         subject: "New Contact Form Submission",
         html: `
             <div style="text-align: center;">
-                <h1>VigilixHUb</h1>
+                <h1>VigilixHub</h1>
             </div>
             <h3>Contact Form Submission</h3>
             <p><strong>Name:</strong> ${name}</p>
